@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "Contato";
+}
+
+<h1>Contato</h1>
+<hr />
+<section class="container row">
+			<form class="form p-5">
+				<div class="row mb-3">
+					<div class="col-md-6 col-sm-12 mb-3">
+						<label for="formGroupExampleInput" class="form-label">Nome</label>
+						<input type="text" class="form-control" id="formGroupExampleInput"
+							placeholder="Primeiro nome" aria-label="First name">
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<label for="formGroupExampleInput2" class="form-label">Sobrenome</label>
+						<input type="text" class="form-control"
+							id="formGroupExampleInput2" placeholder="Último nome"
+							aria-label="Last name">
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlInput1" class="form-label">Endereço
+						de Email</label> <input type="email" class="form-control"
+						id="exampleFormControlInput1" placeholder="nome@exemplo.com"
+						required>
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1"
+						placeholder="Digite aqui sua dúvida, elogio, reclamação ou apenas troque uma ideia com a gente :)"
+						rows="3"></textarea>
+				</div>
+				<div class="text-end mb-5">
+					<a asp-action="Contato" type="button" onclick="mensagem()" class="btn btn-success">Enviar</a>
+				</div>
+			</form>
+		</section>
